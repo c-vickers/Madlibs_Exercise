@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Play Madlib{% endblock %}
+
+{% block content %}
+<form action='/madlib'>
+	<br>Enter the name of a Person: <input type="text" name="person">
+	<br>Enter a Color: <input type="text" name="color">
+	<br>Enter a Noun (not a person): <input type="text" name="noun">
+	<br>Enter an Adjective: <input type="text" name="adj">
+	<br><input type="submit" value="Show me my Madlib!">
+</form>
+{% endblock %}
